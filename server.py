@@ -5,7 +5,6 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-
 @app.get('/saudacao/{nome}')
 def home(nome: str):
     texto = f'Olá {nome}, tudo bem?'
